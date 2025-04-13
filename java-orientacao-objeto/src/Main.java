@@ -1,15 +1,28 @@
+import br.com.alura.screenmatch.modelos.Movie;
+import desafio.gpt.classes.*;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
   public static void main(String[] args) {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    System.out.printf("Hello and welcome!");
+    Movie myMovie = new Movie();
+/*
+    myMovie.name = "Poderoso chefão";
+    myMovie.duration = 180;
+    myMovie.realeseDate = 1970;
+    myMovie.isAvaliable = false;
+    myMovie.updateScore(5.5);
+    myMovie.updateScore(8.5);
+    myMovie.updateScore(10);
+    myMovie.updateScore(2.5);
+    myMovie.updateScore(3);
+    myMovie.showSheet();
+    System.out.println(myMovie.getAverage());*/
 
-    for (int i = 1; i <= 5; i++) {
-      //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-      // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-      System.out.println("i = " + i);
-    }
+    Funcionario anna = new Funcionario("Anna Doe", "Analista Jr.", 2500);
+    anna.exibirInformacoes();
+    anna.promover("Analista Pleno", 10000);
+    anna.exibirInformacoes();
+
   }
 }
